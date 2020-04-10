@@ -1,0 +1,34 @@
+<!--pages/login/login.wxml-->
+<view id="main">
+	<view class="top">
+		<input class="inp" placeholder="美发" />
+	</view>
+	<!-- 结束 -->
+	<view class="tion">
+		<view class="pos">
+			<view>
+        <text>张三 </text> 18324863179
+      </view>
+			<view>
+        北京 <text> 直辖市 </text> 朝阳区望京悠乐汇A座8011
+      </view>
+		</view>
+	</view>
+  <!-- 结束 -->
+  <view class="nav">
+    <view class="nav_1" wx:for="{{lider}}" bindtap="change">
+      <view class="left">
+        <image src="{{item.avatar}}"/>
+      </view>
+      <view class="center">
+        <text>{{item.company}}</text>
+        <view>{{item.nickname}} <text class="red"> {{item.price}}</text></view>
+        <view class="txt">{{item.message}}</view>
+      </view>
+      <view class="right">
+        <view>{{item.distance}}</view>
+      </view>
+    </view>
+  </view>
+	<!-- 主体结束 -->
+</view>

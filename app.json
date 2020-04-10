@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/adds/adds",
+    "pages/order/order",
+    "pages/acg/acg",
+    "pages/bar/bar",
+    "pages/reject/reject",
+    "pages/login/login",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFDAB9",
+    "navigationBarTitleText": "微信",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./pages/images/index_icon.png",
+        "selectedIconPath": "./pages/images/index_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "技师",
+        "iconPath": "./pages/images/skill_icon.png",
+        "selectedIconPath": "./pages/images/skill_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/reject/reject",
+        "text": "我的",
+        "iconPath": "./pages/images/user_icon.png",
+        "selectedIconPath": "./pages/images/user_icon_HL.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,45 @@
+<!--pages/index/index.wxml-->
+<view id="main">
+	<view>
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{arr}}">
+				<swiper-item>
+					<image src="{{item}}" class="slide-image" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<!-- 轮播结束 -->
+	<view class="all">
+		<!-- 内容开始 -->
+		<view class="tab">
+			<!-- 弹性盒子 -->
+			<view wx:for="{{riyle}}" id="tab_1" data-index="{{index}}" bindtap="think">
+				<image src="{{item.icon}}"></image>
+				<text>{{item.title}}</text>
+			</view>
+		</view>
+		<!-- tab结束 -->
+		<scroll-view class="scro" scroll-y lower-threshold bindscrolltolower="lower">
+			<view class="nav">
+				<view wx:for="{{rider}}">
+					<!-- 早在事件中就把数组根据下标显示了 -->
+					<view>
+						<image src="{{item.coverpath}}"></image>
+					</view>
+					<view>
+						<view class="right">
+							<text>{{item.message}}</text>
+							<view class="red">{{item.price}}</view>
+							<text>{{item.subject}}</text>
+							<view bindtap="change">预约</view>
+						</view>
+					</view>
+				</view>
+				<!-- 内容结尾 -->
+			</view>
+		</scroll-view>
+		<!-- all结尾 -->
+	</view>
+	<!-- 主题结尾 -->
+</view>

@@ -1,0 +1,67 @@
+/* pages/reject/reject.wxss */
+#main{
+  width: 100%;
+  height: 100%;
+}
+.top image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.top{
+  padding-top: 50rpx;
+  width: 70%;
+  height: 300rpx;
+  margin: auto;
+}
+.top>view:first-child{
+  width: 220rpx;
+  height: 220rpx;
+  float: left;
+}
+.top>view:last-child{
+  font-size: 32rpx;
+  float: right;
+  margin-top: 40rpx;
+}
+.top>view:last-child>view{
+  margin: 30rpx 0rpx;
+}
+.gitor{
+  width: 100%;
+  height: auto;
+}
+.gitor>view{
+  margin: auto;
+  text-align: center;
+  font-size: 50rpx;
+  margin-bottom: 50rpx;
+}
+.nava{
+  width: 100%;
+  height: auto;
+  font-size: 35rpx;
+}
+.nava>view:first-child{
+  border-bottom: 1px solid #ccc;
+  padding-left: 38rpx;
+  line-height: 55rpx;
+  padding-bottom: 20rpx;
+}
+.nava>view:nth-child(2){
+  border-bottom: 1px solid #ccc;
+  margin-top: 15rpx;
+  padding-left: 38rpx;
+  line-height: 55rpx;
+  padding-bottom: 20rpx;
+}
+.active{
+  padding: 0px;
+  width: 100%;
+  height: 95rpx;
+  line-height: 95rpx;
+  text-align: center;
+  margin: auto;
+  color: red;
+  border-bottom: 2px solid #ccc;
+}

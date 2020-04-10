@@ -1,0 +1,45 @@
+<!--pages/order/order.wxml-->
+<view id="main">
+	<view class="top">
+		<image src="../images/2.png" />
+	</view>
+	<view class="bg">
+		<view>
+			<view class="bg_1">{{name}}<text>{{phone}}</text></view>
+			<view>{{size}}</view>
+		</view>
+	</view>
+	<!-- 结束 -->
+	<view class="nav">
+		<view class="wap">服务时间</view>
+		<!-- 日期 -->
+		<view class="section">
+			<picker mode="date" value="{{date}}" start="2001-01-01" end="2019-12-31" bindchange="bindDateChange">
+				<view class="picker">
+					<view class="pic1">
+						<image src="../images/date.png" />
+					</view>
+					<view class="bor"> {{date}}</view>
+				</view>
+			</picker>
+		</view>
+		<!-- 时间 -->
+		<view class="section">
+			<picker mode="time" value="{{time}}" start="05:01" end="23:59" bindchange="bindTimeChange">
+				<view class="picker">
+					<view class="pic2">
+						<image src="../images/time.png" />
+					</view>
+					<view class="bor"> {{time}}</view>
+				</view>
+			</picker>
+		</view>
+		<!-- 服务时间结束 -->
+		<view class="bom">
+			<view>留言信息</view>
+			<view class="inp"> <input placeholder="输入信息" /> </view>
+			<view class="btn" bindtap="change">确认预定</view>
+		</view>
+	</view>
+	<!-- 结束 -->
+</view>

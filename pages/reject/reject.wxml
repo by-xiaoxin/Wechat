@@ -1,0 +1,28 @@
+<!--pages/reject/reject.wxml-->
+<view id="main">
+  <view class="top">
+    <view class="img"><image src="{{asd}}"></image></view>
+    <view>
+      <text>昵称:</text> {{na}}
+      <view>姓名: {{me}}</view> 
+      <text>电话:</text> {{ph}}
+    </view>
+  </view>
+  <view class="gitor">
+    <view>【地址管理】</view>
+  </view>
+  <view class="nava">
+    <view>
+      <text>{{na}}</text>{{one}}
+      <view>{{ze}}</view>
+    </view>
+    <view>
+      <text>{{me}}</text>{{one}}
+      <view>{{si}}</view>
+    </view>
+    <view class="active" bindtap="change">
+      新增地址+
+    </view>
+  </view>
+  <!-- 结尾 -->
+</view>

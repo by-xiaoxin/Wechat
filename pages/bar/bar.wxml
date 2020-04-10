@@ -1,0 +1,30 @@
+<!--pages/bar/bar.wxml-->
+<view id="main">
+	<view class="top">
+		<image src="../images/2.png" />
+	</view>
+	<!-- 结束 -->
+	<view class="nav">
+		<view class="nav_1">
+				<view>
+					<view class="bon">秋季自然特价美甲 <text class="red"> 价格：￥198</text></view>
+					美甲是一种对指（趾）甲进行装饰美化的工作，又称甲艺设计。
+          美甲是根据客人的 手形、甲形、肤质、服装的色彩和要求，
+          对指（趾）甲进行消毒、清洁、护理、保养、装饰美化的过程。
+          具有表现形式多样化的特点。
+				</view>
+				<view class="xx"></view>
+				<view class="bot">
+          <view class="bon">详情描述</view>
+          <view>一、涂指甲油之前要涂上指甲底油</view>
+          <view>二、不涂面油会让美指甲不堪一击</view>
+          <view>三、短甲小最好涂深色指甲油</view>
+          <view>四、美甲颜色要保持协调</view>
+          <view>五、不要小看修甲工具</view>
+        </view>
+				<!-- <view></view> -->
+        <view class="btn" bindtap="change">立即预定</view>
+		</view>
+	</view>
+		<!-- 结束 -->
+</view>
